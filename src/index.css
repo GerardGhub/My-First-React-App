@@ -4,3 +4,13 @@
 .navbar-style {
   background-color: #0c8351 !important;
 }
+
+.green-highlight {
+  color: #008000;
+  font-size: 25px;
+}
+
+.red-highlight {
+  color: #ff0000;
+  font-size: 25px;
+}
