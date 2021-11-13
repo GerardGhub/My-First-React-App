@@ -20,7 +20,29 @@ export default class Product extends Component {
             <div>${this.state.product.price}</div>
           </div>
           {/* {card body ends here} */}
-          <div className="card-footer text-right">{this.props.children}</div>
+          <div className="card-footer">
+            <div className="float-left">
+              <span className="badge">{this.state.product.quantity}</span>
+
+              <div className="btn-group">
+                <button
+                  className="btn btn-outline-success"
+                  onClick={this.props.onIncrement}
+                >
+                  +
+                </button>
+                <button
+                  className="btn btn-outline-success"
+                  onClick={this.props.onDecrement}
+                >
+                  -
+                </button>
+              </div>
+            </div>
+            {/* {float-left ends here} */}
+            <div className="float-right">{this.props.children}</div>
+          </div>
+          {/* {card footers ends here} */}
         </div>
       </div>
     );
