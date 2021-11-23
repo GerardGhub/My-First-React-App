@@ -6,31 +6,34 @@ export default class Product extends Component {
   };
 
   render() {
-    //    console.log(this.props);
+    console.log(this.props);
+
     return (
       <div className="col-lg-6">
         <div className="card m-2">
           <div className="card-body">
             <div className="text-muted">
-              #{this.state.product.id}
-              {/* {delete button starts} */}
+              # {this.state.product.id}
+              {/* delete button starts */}
               <span
-                className="pull-right"
+                className="pull-right hand-icon"
                 onClick={() => {
                   this.props.onDelete(this.state.product);
                 }}
               >
                 <i className="fa fa-times"></i>
               </span>
+              {/* delete button ends */}
             </div>
 
             <h5 className="pt-2 border-top">
               {this.state.product.productName}
             </h5>
 
-            <div>${this.state.product.price}</div>
+            <div>$ {this.state.product.price}</div>
           </div>
-          {/* {card body ends here} */}
+          {/* card body ends here */}
+
           <div className="card-footer">
             <div className="float-left">
               <span className="badge">{this.state.product.quantity}</span>
@@ -44,6 +47,7 @@ export default class Product extends Component {
                 >
                   +
                 </button>
+
                 <button
                   className="btn btn-outline-success"
                   onClick={() => {
@@ -54,10 +58,11 @@ export default class Product extends Component {
                 </button>
               </div>
             </div>
-            {/* {float-left ends here} */}
+            {/* float-left ends here */}
+
             <div className="float-right">{this.props.children}</div>
           </div>
-          {/* {card footers ends here} */}
+          {/* card-footer ends here */}
         </div>
       </div>
     );
