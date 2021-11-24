@@ -7,7 +7,7 @@ export default class Product extends Component {
     console.log("Constructor -Product");
 
     this.state = {
-      product: this.props.product,
+      product: this.props.prouct,
     };
   }
 

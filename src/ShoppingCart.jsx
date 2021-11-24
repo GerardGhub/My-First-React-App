@@ -64,6 +64,12 @@ export default class ShoppingCart extends Component {
   componentWillUnmount() {
     console.log("componentWillUnmount - ShoppingCart");
   }
+
+  componentDidCatch(error, info) {
+    console.log("componentWillUnmount - ShoppingCart");
+    console.log(error, info);
+    localStorage.lastError = `${error}\n${JSON.stringify * info}`;
+  }
   //execute when the user clicks on + button
   handleIncrement = (product, maxValue) => {
     // console.log("handleIncrement", product);
