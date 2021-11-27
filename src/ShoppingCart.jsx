@@ -3,7 +3,7 @@ import Product from "./Product";
 export default class ShoppingCart extends Component {
   //Executes when the component is mounted
   constructor(props) {
-    console.log("constructor - ShoppingCart");
+    // console.log("constructor - ShoppingCart");
     super(props); //Calling super class of constructor
     //Initialization of the state
     this.state = {
@@ -19,7 +19,7 @@ export default class ShoppingCart extends Component {
   }
 
   render() {
-    console.log("render - Shoppingcart");
+    // console.log("render - Shoppingcart");
     return (
       <div className="container-fluid">
         <h4> Shopping Cart</h4>
@@ -46,7 +46,7 @@ export default class ShoppingCart extends Component {
   //Executes after constructor and render method (includes life cycle of th child components, if any) of current component
   componentDidMount() {
     //fetch data from data source
-    console.log("componentDidMount - Shoppingcart");
+    // console.log("componentDidMount - Shoppingcart");
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -62,7 +62,7 @@ export default class ShoppingCart extends Component {
   }
   //Executes when the current instance of current component is being deleted from memory
   componentWillUnmount() {
-    console.log("componentWillUnmount - ShoppingCart");
+    // console.log("componentWillUnmount - ShoppingCart");
   }
 
   componentDidCatch(error, info) {
