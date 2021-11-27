@@ -17,6 +17,9 @@ export default class Login extends Component {
             type="text"
             className="form-control"
             value={this.state.email}
+            onChange={(event) => {
+              this.setState({ email: event.target.value });
+            }}
           />
         </div>
         {/* End of Email */}
@@ -28,10 +31,19 @@ export default class Login extends Component {
             type="password"
             className="form-control"
             value={this.state.password}
+            onChange={(event) => {
+              this.setState({ password: event.target.value });
+            }}
           />
         </div>
         {/* End of Password */}
+        <div className="btn btn-primary" onClick={this.onLoginClick}>
+          Login
+        </div>
       </div>
     );
-  }
+  } //end of render
+  onLoginClick = () => {
+    console.log(this.state);
+  };
 }
