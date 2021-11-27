@@ -4,16 +4,18 @@ export default class Product extends Component {
   constructor(props) {
     super(props);
 
-    console.log("Constructor -Product");
+    //console.log("Constructor - Product");
 
     this.state = {
-      product: this.props.prouct,
+      product: this.props.product,
     };
   }
 
   render() {
-    // console.log(this.props);
-    console.log("Render -Product");
+    //console.log(this.props);
+
+    //console.log("render - Product");
+
     return (
       <div className="col-lg-6">
         <div className="card m-2">
@@ -73,15 +75,17 @@ export default class Product extends Component {
       </div>
     );
   }
+
   componentDidMount() {
-    console.log("componentDidMount - Product");
+    //console.log("componentDidMount - Product");
   }
 
   componentDidUpdate() {
-    console.log("ComponentDidUpdate - Product");
+    //console.log("componentDidUpdate - Product");
   }
+
   //Executes when the current instance of current component is being deleted from memory
   componentWillUnmount() {
-    console.log("componentWillUnmount - Product");
+    //console.log("componentWillUnmount - Product");
   }
 }
