@@ -7,7 +7,7 @@ export default class Login extends Component {
   }
   render() {
     return (
-      <div className="col-lg-9">
+      <div>
         <h4 className="m-1 p-2 border-bottom">Login</h4>
 
         {/* Email Starts */}

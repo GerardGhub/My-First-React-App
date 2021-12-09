@@ -17,6 +17,7 @@ export default class Product extends Component {
     //console.log("render - Product");
 
     return (
+   
       <div className="col-lg-6">
         <div className="card m-2">
           <div className="card-body">
@@ -72,6 +73,7 @@ export default class Product extends Component {
           </div>
           {/* card-footer ends here */}
         </div>
+      
       </div>
     );
   }
